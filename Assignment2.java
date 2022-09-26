@@ -25,13 +25,13 @@ public class Assignment2
 				odd = diamondInt;
 				String odd_asterisk = "*";
 				System.out.println();
-					for(int i=0; i<(odd+1)/2;i++)
+					for(int i=1, j=odd; i<=odd; i+=2, j--)
 					{
-						// for(int j=0;j<odd/2;j++){
-
-						// System.out.println("b");
-						// }
+					System.out.println(space.repeat(j)+odd_asterisk.repeat(i));
 					}
+                    for(int m=odd-2, n=odd; m>=0;m-=2,n++){
+                    System.out.println(space.repeat(n)+odd_asterisk.repeat(m));
+                    }
 
             //Else is the other route for even
 			}else
@@ -47,6 +47,7 @@ public class Assignment2
                             {
                             System.out.println((space.repeat(n)) + evenAsterisk.repeat(m));
                             }
+                            // "\\033[F is the escape sequence to go back up a line, to add the last point of the diamond"
                             System.out.print("\033[F" + space.repeat(even+1) + "*");
                 }
 
@@ -54,27 +55,4 @@ public class Assignment2
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        // for(int k=even/2,l=0; k<(even)/2;k--,l++){
-		// 	System.out.println((space.repeat(l)) + even_asterisk.repeat((k+1)*2));
-		// 	}
-
-
-
-// for (int i=0; i < diamondInt; i++){
-		// 	for (int k = 0; k < diamondInt-1-i/2; i++){
-		// 		System.out.println("*");
-		//     }
-		// }
-
+//for(int j=0;j<odd/2;j++){
