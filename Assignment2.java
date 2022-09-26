@@ -21,7 +21,9 @@ public class Assignment2{
                 for(int i=0; i<odd;i++){
                     System.out.println("*");
                 }
-        } else{
+        //Else is the other route for even
+
+		} else{
             even = diamondInt;
             System.out.println("\n" + even);
         }
