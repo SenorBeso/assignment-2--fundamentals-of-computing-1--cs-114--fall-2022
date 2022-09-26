@@ -1,8 +1,10 @@
 import java.util.Scanner;
 import java.util.*;
 
-public class Assignment2{
-	public static void main(String[] args){
+public class Assignment2
+{
+	public static void main(String[] args)
+	{
 		Scanner input=new Scanner(System.in);
 		Integer diamondInt;
 		int odd, even;
@@ -10,45 +12,47 @@ public class Assignment2{
 
 
 		//Determines if the input is positive. If it is negative, new input is required to continue
-		do{
+		do
+		{
 		System.out.println("Please enter a positive integer:");
 		diamondInt = input.nextInt();
 		}
 		while (diamondInt<0);
 
-		//Determines if it is even or odd
-		if (diamondInt%2==1){
-            odd = diamondInt;
-			String odd_asterisk = "*";
-
-            System.out.println();
-                for(int i=0; i<(odd+1)/2;i++){
-					// for(int j=0;j<odd/2;j++){
+			//Determines if it is even or odd
+			if (diamondInt%2==1)
+			{
+				odd = diamondInt;
+				String odd_asterisk = "*";
+				System.out.println();
+					for(int i=0; i<(odd+1)/2;i++)
+					{
+						// for(int j=0;j<odd/2;j++){
 
 						// System.out.println("b");
 						// }
-				}
-				// for(int k=0;k<(odd/2);k++){
-				// 	System.out.println("*");
-				// 	System.out.println("*");
-				// 		for(int l=0;l<k;l++){
-				// 			System.out.println("s");
-				// 			System.out.println("*");
-				// 		}
-				// }
+					}
+						// for(int k=0;k<(odd/2);k++){
+						// 	System.out.println("*");
+						// 	System.out.println("*");
+					// 		for(int l=0;l<k;l++){
+					// 			System.out.println("s");
+					// 			System.out.println("*");
+					// 		}
+					// }
 
 
-        		//Else is the other route for even
+					//Else is the other route for even
 
-		} 	else{
-            even = diamondInt;
-			String even_asterisk = "* ";
-			System.out.println(space.repeat(even+1)+"*");
-				for(int i=0,j=even/2; i<=(even);i++,j--){
-					System.out.println((space.repeat(j*2)) + even_asterisk.repeat((i+1)*2));
-
-
-				}
+			}else
+			{
+				even = diamondInt;
+				String even_asterisk = "* ";
+				System.out.println(space.repeat(even+1)+"*");
+					for(int i=0,j=even/2; i<=(even/2);i++,j--)
+					{
+						System.out.println((space.repeat(j*2)) + even_asterisk.repeat((i+1)*2));
+					}
 
 
 
