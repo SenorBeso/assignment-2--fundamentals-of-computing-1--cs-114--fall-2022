@@ -49,12 +49,14 @@ public class Assignment2
 				even = diamondInt;
 				String even_asterisk = "* ";
 				System.out.println(space.repeat(even+1)+"*");
-					for(int i=0,j=even/2; i<=(even/2);i++,j--)
+					for(int i=0,j=even/2; i<(even)/2;i++,j--)
 					{
-						System.out.println((space.repeat(j*2)) + even_asterisk.repeat((i+1)*2));
+					System.out.println((space.repeat(j*2)) + even_asterisk.repeat((i+1)*2));
 					}
-
-
+						for(int m=0,n=even;m<=even;m++,n--)
+							{
+							System.out.println((space.repeat(n)) + even_asterisk.repeat(m-2));
+							}
 
 			}
 	}
