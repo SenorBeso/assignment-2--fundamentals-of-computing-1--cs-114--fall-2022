@@ -10,11 +10,12 @@ public class Assignment2 {
 	while (true) {
 		System.out.println("Please enter a positive integer:");
 			diamondInt = input.nextInt();
-			if (diamondInt < 0){
-			System.out.println("Try again");
-			continue;
+			    if (diamondInt < 0){
+			    System.out.println("Try again");
+			    continue;
 			}
-		break;}
+
+            break;}
 
 		for (int i=0; i < diamondInt; i++){
 			for (int k = 0; k < diamondInt-1-i/2; i++){
