@@ -32,33 +32,23 @@ public class Assignment2
 						// System.out.println("b");
 						// }
 					}
-						// for(int k=0;k<(odd/2);k++){
-						// 	System.out.println("*");
-						// 	System.out.println("*");
-					// 		for(int l=0;l<k;l++){
-					// 			System.out.println("s");
-					// 			System.out.println("*");
-					// 		}
-					// }
 
-
-					//Else is the other route for even
-
+            //Else is the other route for even
 			}else
-			{
-				even = diamondInt;
-				String evenAsterisk = "* ";
-				System.out.println(space.repeat(even+1)+"*");
-					for(int i=0,j=even/2 ; i<(even)/2 ; i++,j--)
-					{
-					System.out.println((space.repeat(j*2)) + evenAsterisk.repeat((i+1)*2));
-
-					}
-					    for(int m=even-2,n=(even-2)/2 ; m>=0 ; m-=2,n++)
-					    {
-					    System.out.println((space.repeat(n*2)) + evenAsterisk.repeat(m));
-					    } System.out.print(space.repeat(even+1)+"*");
-                    }
+                {
+                    even = diamondInt;
+                    String evenAsterisk = "* ";
+                    System.out.println(space.repeat(even+1)+"*");
+                        for(int i=0,j=even/2 ; i<(even)/2 ; i++,j--)
+                        {
+                        System.out.println((space.repeat(j*2)) + evenAsterisk.repeat((i+1)*2));
+                        }
+                            for(int m=even-2,n=even-(even-4); m>=0 ; m-=2,n+=2)
+                            {
+                            System.out.println((space.repeat(n)) + evenAsterisk.repeat(m));
+                            }
+                            System.out.print(space.repeat(even+1)+"*");
+                }
 
 	}
 }
