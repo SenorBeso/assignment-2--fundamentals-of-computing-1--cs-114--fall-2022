@@ -47,18 +47,19 @@ public class Assignment2
 			}else
 			{
 				even = diamondInt;
-				String even_asterisk = "* ";
+				String evenAsterisk = "* ";
 				System.out.println(space.repeat(even+1)+"*");
-					for(int i=0,j=even/2; i<(even)/2;i++,j--)
+					for(int i=0,j=even/2 ; i<(even)/2 ; i++,j--)
 					{
-					System.out.println((space.repeat(j*2)) + even_asterisk.repeat((i+1)*2));
-					}
-						for(int m=0,n=even;m<=even;m++,n--)
-							{
-							System.out.println((space.repeat(n)) + even_asterisk.repeat(m-2));
-							}
+					System.out.println((space.repeat(j*2)) + evenAsterisk.repeat((i+1)*2));
 
-			}
+					}
+					    for(int m=even-2,n=(even-2)/2 ; m>=0 ; m-=2,n++)
+					    {
+					    System.out.println((space.repeat(n*2)) + evenAsterisk.repeat(m));
+					    } System.out.print(space.repeat(even+1)+"*");
+                    }
+
 	}
 }
 
