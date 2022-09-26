@@ -1,12 +1,27 @@
 import java.util.Scanner;
 import java.util.*;
 
-public class Assignment2 {
-	public static void main(String[] args) {
-
+public class Assignment2{
+	public static void main(String[] args){
 		Scanner input=new Scanner(System.in);
 		Integer diamondInt;
-        int odd;
+		int odd, even;
+
+		//Determines if the input is positive. If it is negative, new input is required to continue
+		do{
+		System.out.println("Please enter a positive integer:");
+		diamondInt = input.nextInt();
+		}
+		while (diamondInt<0);
+
+		//Determines if it is even or odd
+		if (diamondInt%2==1){
+            odd = diamondInt;
+            System.out.println("\n" + odd);
+        } else{
+            even = diamondInt;
+            System.out.println("\n" + even);
+        }
 
 
 
@@ -14,9 +29,11 @@ public class Assignment2 {
 
 
 
-    }
+
+
+
+	}
 }
-    //Determines if the input is positive. If it is negative, new input is required to continue
 
 
 
@@ -36,7 +53,8 @@ public class Assignment2 {
 
 
 
-    // while (true) {
+
+	// while (true) {
 	// 	System.out.println("Please enter a positive integer:");
 	// 		diamondInt = input.nextInt();
 	// 		    if (diamondInt < 0){
@@ -44,12 +62,12 @@ public class Assignment2 {
 	// 		    continue;
 	// 		}
 
-    //         break;
+	//         break;
 
 
 // for (int i=0; i < diamondInt; i++){
 		// 	for (int k = 0; k < diamondInt-1-i/2; i++){
 		// 		System.out.println("*");
-        //     }
-    	// }
+		//     }
+		// }
 
