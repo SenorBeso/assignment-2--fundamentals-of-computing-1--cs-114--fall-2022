@@ -17,9 +17,14 @@ public class Assignment2{
 		//Determines if it is even or odd
 		if (diamondInt%2==1){
             odd = diamondInt;
-            System.out.println("\n" + odd);
-                for(int i=0; i<odd;i++){
-                    System.out.println("*");
+            System.out.println("\n");
+                for(int i=0; i<(odd+1)/2;i++){
+                    System.out.println("S");
+						for(int j=0;j<i;j++){
+						System.out.println("*");
+						}
+					// for(int j=0;j<(odd+1)/4;j++);
+					// 	System.out.println("**");
                 }
         //Else is the other route for even
 
