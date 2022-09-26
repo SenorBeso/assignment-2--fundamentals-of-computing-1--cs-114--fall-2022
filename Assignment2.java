@@ -18,17 +18,13 @@ public class Assignment2{
 		if (diamondInt%2==1){
             odd = diamondInt;
             System.out.println("\n" + odd);
+                for(int i=0; i<odd;i++){
+                    System.out.println("*");
+                }
         } else{
             even = diamondInt;
             System.out.println("\n" + even);
         }
-
-
-
-
-
-
-
 
 
 
