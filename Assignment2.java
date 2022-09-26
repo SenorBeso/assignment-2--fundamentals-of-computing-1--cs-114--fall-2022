@@ -15,16 +15,17 @@ public class Assignment2 {
 			    continue;
 			}
 
-            break;}
+            break;
+        }
 
 		for (int i=0; i < diamondInt; i++){
 			for (int k = 0; k < diamondInt-1-i/2; i++){
 				System.out.println("*");
+            }
+    	}
 
 
-		}
 
-		}
 	}
 	}
 
