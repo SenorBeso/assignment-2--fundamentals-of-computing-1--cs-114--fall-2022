@@ -47,7 +47,7 @@ public class Assignment2
                             {
                             System.out.println((space.repeat(n)) + evenAsterisk.repeat(m));
                             }
-                            System.out.print(space.repeat(even+1)+"*");
+                            System.out.print("\033[F" + space.repeat(even+1) + "*");
                 }
 
 	}
