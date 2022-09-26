@@ -19,13 +19,23 @@ public class Assignment2{
             odd = diamondInt;
             System.out.println("\n");
                 for(int i=0; i<(odd+1)/2;i++){
-                    System.out.println("S");
+                    System.out.println("s");
+					System.out.println("*");
 						for(int j=0;j<i;j++){
 						System.out.println("*");
+						System.out.println("*");
 						}
-					// for(int j=0;j<(odd+1)/4;j++);
-					// 	System.out.println("**");
-                }
+				}
+				for(int k=0;k<(odd/2);k++){
+					System.out.println("*");
+					System.out.println("*");
+						for(int l=0;l<k;l++){
+							System.out.println("s");
+							System.out.println("*");
+						}
+				}
+
+
         //Else is the other route for even
 
 		} else{
