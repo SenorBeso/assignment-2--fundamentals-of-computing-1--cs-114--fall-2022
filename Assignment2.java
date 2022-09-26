@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.*;
 
 public class Assignment2
 {
@@ -29,30 +28,26 @@ public class Assignment2
 					{
 					System.out.println(space.repeat(j)+odd_asterisk.repeat(i));
 					}
-                    for(int m=odd-2, n=odd; m>=0;m-=2,n++){
-                    System.out.println(space.repeat(n)+odd_asterisk.repeat(m));
-                    }
-
-            //Else is the other route for even
-			}else
-                {
-                    even = diamondInt;
-                    String evenAsterisk = "* ";
-                    System.out.println(space.repeat(even+1)+"*");
-                        for(int i=0,j=even/2 ; i<(even)/2 ; i++,j--)
-                        {
-                        System.out.println((space.repeat(j*2)) + evenAsterisk.repeat((i+1)*2));
-                        }
-                            for(int m=even-2,n=even-(even-4); m>=0 ; m-=2,n+=2)
-                            {
-                            System.out.println((space.repeat(n)) + evenAsterisk.repeat(m));
-                            }
-                            // "\\033[F is the escape sequence to go back up a line, to add the last point of the diamond"
-                            System.out.print("\033[F" + space.repeat(even+1) + "*");
-                }
-
+						for(int m=odd-2, n=odd; m>=0;m-=2,n++)
+						{
+						System.out.println(space.repeat(n)+odd_asterisk.repeat(m));
+						}
+			}	else
+				{
+					even = diamondInt;
+					String evenAsterisk = "* ";
+					System.out.println(space.repeat(even+1)+"*");
+						for(int i=0,j=even/2 ; i<(even)/2 ; i++,j--)
+						{
+						System.out.println((space.repeat(j*2)) + evenAsterisk.repeat((i+1)*2));
+						}
+							for(int m=even-2,n=even-(even-4); m>=0 ; m-=2,n+=2)
+							{
+							System.out.println((space.repeat(n)) + evenAsterisk.repeat(m));
+							}
+							// "\\033[F is the escape sequence to go back up a line, to add the last point of the diamond"
+							System.out.print("\033[F" + space.repeat(even+1) + "*");
+				}
 	}
 }
 
-
-//for(int j=0;j<odd/2;j++){
