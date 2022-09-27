@@ -24,14 +24,17 @@ public class Assignment2
 				odd = diamondInt;
 				String odd_asterisk = "*";
 				System.out.println();
-					for(int i=1, j=odd; i<=odd; i+=2, j--)
+
+
+					for(int i=0, j=odd; i<=odd; i+=2, j--)
 					{
-					System.out.println(space.repeat(j)+odd_asterisk.repeat(i));
+					System.out.println(space.repeat(j)+odd_asterisk.repeat(i+1));
 					}
-						for(int m=odd-2, n=odd; m>=0;m-=2,n++)
+						for(int m=odd-2, n=odd-1*(odd-(odd/2))+2; m>=0;m-=2)
 						{
-						System.out.println(space.repeat(n)+odd_asterisk.repeat(m));
+						System.out.println(space.repeat(n++)+odd_asterisk.repeat(m));
 						}
+
 			}	else
 				{
 					even = diamondInt;
