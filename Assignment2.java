@@ -13,7 +13,6 @@ public class Assignment2{
         diamondInt = input.nextInt();
         }
         while (diamondInt<0);
-
             //Determines if it is even or odd
             if (diamondInt%2==1){
                 //This is the odd route
