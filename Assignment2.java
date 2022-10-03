@@ -19,18 +19,14 @@ public class Assignment2{
                 oddInput = diamondInteger;
                 String oddAsterisk = "*";
                 System.out.println();
-                    for(int i = oddInput; i<=oddInput; i--){
-                        System.out.print(space.repeat(i));
-                        System.out.print("*");
 
+                    for(int i=0, j=oddInput; i<=oddInput; i+=2, j--){
+                    System.out.println(space.repeat(j)+oddAsterisk.repeat(i+1));
                     }
-                    // for(int i=0, j=oddInput; i<=oddInput; i+=2, j--){
-                    // System.out.println(space.repeat(j)+oddAsterisk.repeat(i+1));
-                    // }
-                    //     //Second Half of diamond after the Middle section where # of "*" = odd
-                    //     for(int m=oddInput-2, n=oddInput-1*(oddInput-(oddInput/2))+2; m>=0;m-=2){
-                    //     System.out.println(space.repeat(n++)+oddAsterisk.repeat(m));
-                    //     }
+                        //Second Half of diamond after the Middle section where # of "*" = odd
+                        for(int m=oddInput-2, n=oddInput-1*(oddInput-(oddInput/2))+2; m>=0;m-=2){
+                        System.out.println(space.repeat(n++)+oddAsterisk.repeat(m));
+                        }
             }else{
                 //This is the even the route
                 evenInput = diamondInteger;
