@@ -39,7 +39,7 @@ public class Assignment2{
                     for(int i=0,j=evenInput/2 ; i<(evenInput)/2 ; i++,j--){
                     System.out.println((space.repeat(j*2)) + evenAsterisk.repeat((i+1)*2));
                     }
-                        //Second Half of diamond after the Middle section where # of "*" = evenInput
+                        //Second Half of diamond after the Middle section where # of "*" = even
                         for(int m=evenInput-2,n=evenInput-(evenInput-4); m>=0 ; m-=2,n+=2){
                         System.out.println((space.repeat(n)) + evenAsterisk.repeat(m));
                         }
