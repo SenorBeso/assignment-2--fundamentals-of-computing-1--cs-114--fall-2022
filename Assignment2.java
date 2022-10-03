@@ -19,19 +19,20 @@ public class Assignment2 {
                 String oddAsterisk = "*";
                 System.out.println();
 
-                for(int asterisk = 0, oddSpace = oddInput ; asterisk <= oddInput ; asterisk+=2, oddSpace--) {
+                for (int asterisk = 0, oddSpace = oddInput ; asterisk <= oddInput ; asterisk+=2, oddSpace--) {
                     System.out.println(spaceCharacter.repeat(oddSpace)+oddAsterisk.repeat(asterisk+1));
                 }
 
                 //Second Half of diamond after the Middle section where # of "*" = odd
-                for (int asteriskSecondHalf = oddInput-2, spaceSecondHalf = oddInput-1*(oddInput - (oddInput/2))+2 ; asteriskSecondHalf >= 0 ; asteriskSecondHalf-=2) {
+                for (int asteriskSecondHalf = oddInput-2, spaceSecondHalf = oddInput-1*(oddInput - (oddInput/2))+2 ; asteriskSecondHalf >= 0
+                ; asteriskSecondHalf-=2) {
                     System.out.println(spaceCharacter.repeat(spaceSecondHalf++)+oddAsterisk.repeat(asteriskSecondHalf));
                 }
             } else {
                 //This is the even the route
                 evenInput = diamondIntInput;
                 String evenAsteriskCharacter = "* ";
-                System.out.println(spaceCharacter.repeat(evenInput+1)+"*");
+                System.out.println(spaceCharacter.repeat(evenInput+1) + "*");
 
                 for (int asterisk = 0, evenSpace = evenInput/2 ; asterisk < (evenInput)/2 ; asterisk++,evenSpace--) {
                         System.out.println((spaceCharacter.repeat(evenSpace*2)) + evenAsteriskCharacter.repeat((asterisk+1)*2));
