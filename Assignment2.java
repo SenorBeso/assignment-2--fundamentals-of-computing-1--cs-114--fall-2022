@@ -38,8 +38,8 @@ public class Assignment2 {
                         System.out.println((spaceCharacter.repeat(evenSpace*2)) + evenAsteriskCharacter.repeat((asterisk+1)*2));
                     }
                         //Second Half of diamond after the Middle section where # of "*" = even
-                        for (int asteriskSecondHalf = evenInput-2, spaceSecondHalf = evenInput-(evenInput-4) ; asteriskSecondHalf >= 0 ; asteriskSecondHalf-=2
-                            , spaceSecondHalf+=2) {
+                        for (int asteriskSecondHalf = evenInput-2, spaceSecondHalf = evenInput-(evenInput-4) ; asteriskSecondHalf >= 0
+                        ; asteriskSecondHalf-=2, spaceSecondHalf+=2) {
                             System.out.println((spaceCharacter.repeat(spaceSecondHalf)) + evenAsteriskCharacter.repeat(asteriskSecondHalf));
                         }
                         System.out.print(spaceCharacter.repeat(evenInput+1) + "*");
