@@ -35,7 +35,6 @@ public class Assignment2 {
                 evenInput = diamondIntInput;
                 String evenAsteriskCharacter = "* ";
                 int evenSpace = (evenInput)/2;
-                int finalEvenSpace = (evenInput)/2;
                 System.out.print(spaceCharacter.repeat(evenInput+1) + "*");
 
                 for (int asterisk = 0 ; asterisk < evenInput/2 ; asterisk++) {
