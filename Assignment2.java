@@ -42,10 +42,10 @@ public class Assignment2 {
                         evenSpace--;
                 }
                     //Second half of diamond after the midpoint where its # of "*" == evenInput
-                    int space = evenInput-(evenInput-4);
+                    int spaceSecondHalf = evenInput-(evenInput-4);
                     for (int asterisk = evenInput-2 ; asterisk >= 0 ; asterisk-=2) {
-                        System.out.print("\n" + spaceCharacter.repeat(space) + evenAsteriskCharacter.repeat(asterisk));
-                        space+=2;
+                        System.out.print("\n" + spaceCharacter.repeat(spaceSecondHalf) + evenAsteriskCharacter.repeat(asterisk));
+                        spaceSecondHalf+=2;
                     }
                     System.out.print("*");
             }
