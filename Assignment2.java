@@ -46,9 +46,9 @@ public class Assignment2 {
                         for (int asterisk = evenInput-2 ; asterisk >= 0 ; asterisk-=2) {
                             System.out.print(spaceCharacter.repeat(space));
                             space+=2;
-                            System.out.print(evenAsteriskCharacter.repeat(asterisk));
+                            System.out.println(evenAsteriskCharacter.repeat(asterisk));
                         }
-                        System.out.print(spaceCharacter.repeat(evenInput+1) + "*");
+                        System.out.println(spaceCharacter.repeat(evenInput+1) + "*");
             }
     }
 }
