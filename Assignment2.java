@@ -40,7 +40,7 @@ public class Assignment2 {
 
                 for (int asterisk = 0 ; asterisk < evenInput/2 ; asterisk++) {
                         System.out.print("\n" + spaceCharacter.repeat(evenSpace*2) + evenAsteriskCharacter.repeat((asterisk+1)*2));
-                        --evenSpace;
+                        evenSpace--;
                 }
                     //Second half of diamond after the midpoint where its # of "*" == evenInput
                     int space = evenInput-(evenInput-4);
