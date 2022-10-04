@@ -30,7 +30,7 @@ public class Assignment2 {
                 }
 
             } else {
-                //This is the even the route
+                //This is even the route
                 evenInput = diamondIntInput;
                 String evenAsteriskCharacter = "* ";
                 System.out.println(spaceCharacter.repeat(evenInput+1) + "*");
