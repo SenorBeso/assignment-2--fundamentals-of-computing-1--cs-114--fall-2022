@@ -35,19 +35,21 @@ public class Assignment2 {
                 evenInput = diamondIntInput;
                 String evenAsteriskCharacter = "* ";
                 int evenSpace = (evenInput)/2;
-                System.out.print(spaceCharacter.repeat(evenInput+1) + "*");
+                System.out.println(spaceCharacter.repeat(evenInput+1) + "*");
 
                 for (int asterisk = 0 ; asterisk < evenInput/2 ; asterisk++) {
-                        System.out.print("\n" + spaceCharacter.repeat(evenSpace*2) + evenAsteriskCharacter.repeat((asterisk+1)*2));
+                        System.out.print(spaceCharacter.repeat(evenSpace*2) + evenAsteriskCharacter.repeat((asterisk+1)*2));
                         evenSpace--;
+                        System.out.println();
                 }
                     //Second half of diamond after the midpoint where its # of "*" == evenInput
-                    int spaceSecondHalf = evenInput-(evenInput-4);
                     for (int asterisk = evenInput-2 ; asterisk >= 0 ; asterisk-=2) {
-                        System.out.print("\n" + spaceCharacter.repeat(spaceSecondHalf) + evenAsteriskCharacter.repeat(asterisk));
-                        spaceSecondHalf+=2;
+                        System.out.print(spaceCharacter.repeat(evenSpace+4) + evenAsteriskCharacter.repeat(asterisk));
+                        evenSpace+=2;
+                        System.out.println();
                     }
-                    System.out.print("*");
+                    System.out.print(spaceCharacter.repeat(evenInput+1) + "*");
+
             }
     }
 }
